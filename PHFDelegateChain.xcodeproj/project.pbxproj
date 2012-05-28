@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C0F03EF998F4EA489C7EB90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DE978ACAF340F190CF5F53 /* libPods.a */; };
+		D505ED6C15736C4000990F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D505ED6B15736C4000990F20 /* Cocoa.framework */; };
+		D505ED7E15736C4000990F20 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D505ED7D15736C4000990F20 /* SenTestingKit.framework */; };
+		D505ED7F15736C4000990F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D505ED6B15736C4000990F20 /* Cocoa.framework */; };
+		D505ED8215736C4000990F20 /* PHFDelegateChain.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D505ED6815736C4000990F20 /* PHFDelegateChain.dylib */; };
+		D505ED8B15736C4000990F20 /* PHFDelegateChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D505ED8A15736C4000990F20 /* PHFDelegateChainTests.m */; };
+		D505EDB21574267100990F20 /* PHFDelegateChain.h in Headers */ = {isa = PBXBuildFile; fileRef = D505EDB01574267100990F20 /* PHFDelegateChain.h */; };
+		D505EDB31574267100990F20 /* PHFDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D505EDB11574267100990F20 /* PHFDelegateChain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D505ED8015736C4000990F20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D505ED5F15736C4000990F20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D505ED6715736C4000990F20;
+			remoteInfo = PHFDelegateChain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		650FCAA05961476781B5F5CD /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		93DE978ACAF340F190CF5F53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D505ED6815736C4000990F20 /* PHFDelegateChain.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PHFDelegateChain.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D505ED6B15736C4000990F20 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D505ED6E15736C4000990F20 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D505ED6F15736C4000990F20 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D505ED7015736C4000990F20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D505ED7C15736C4000990F20 /* PHFDelegateChainTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHFDelegateChainTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D505ED7D15736C4000990F20 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D505ED8A15736C4000990F20 /* PHFDelegateChainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHFDelegateChainTests.m; sourceTree = "<group>"; };
+		D505EDB01574267100990F20 /* PHFDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHFDelegateChain.h; sourceTree = "<group>"; };
+		D505EDB11574267100990F20 /* PHFDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHFDelegateChain.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D505ED6515736C4000990F20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D505ED6C15736C4000990F20 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D505ED7815736C4000990F20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D505ED7E15736C4000990F20 /* SenTestingKit.framework in Frameworks */,
+				D505ED7F15736C4000990F20 /* Cocoa.framework in Frameworks */,
+				D505ED8215736C4000990F20 /* PHFDelegateChain.dylib in Frameworks */,
+				2C0F03EF998F4EA489C7EB90 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D505ED5D15736C4000990F20 = {
+			isa = PBXGroup;
+			children = (
+				D505EDB01574267100990F20 /* PHFDelegateChain.h */,
+				D505EDB11574267100990F20 /* PHFDelegateChain.m */,
+				D505ED8315736C4000990F20 /* Tests */,
+				D505ED6A15736C4000990F20 /* Frameworks */,
+				D505ED6915736C4000990F20 /* Products */,
+				650FCAA05961476781B5F5CD /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D505ED6915736C4000990F20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D505ED6815736C4000990F20 /* PHFDelegateChain.dylib */,
+				D505ED7C15736C4000990F20 /* PHFDelegateChainTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D505ED6A15736C4000990F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D505ED6B15736C4000990F20 /* Cocoa.framework */,
+				D505ED7D15736C4000990F20 /* SenTestingKit.framework */,
+				D505ED6D15736C4000990F20 /* Other Frameworks */,
+				93DE978ACAF340F190CF5F53 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D505ED6D15736C4000990F20 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D505ED6E15736C4000990F20 /* AppKit.framework */,
+				D505ED6F15736C4000990F20 /* CoreData.framework */,
+				D505ED7015736C4000990F20 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D505ED8315736C4000990F20 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D505ED8A15736C4000990F20 /* PHFDelegateChainTests.m */,
+			);
+			name = Tests;
+			path = PHFDelegateChainTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D505ED6615736C4000990F20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D505EDB21574267100990F20 /* PHFDelegateChain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D505ED6715736C4000990F20 /* PHFDelegateChain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D505ED8E15736C4000990F20 /* Build configuration list for PBXNativeTarget "PHFDelegateChain" */;
+			buildPhases = (
+				D505ED6415736C4000990F20 /* Sources */,
+				D505ED6515736C4000990F20 /* Frameworks */,
+				D505ED6615736C4000990F20 /* Headers */,
+				F7F476D228024803A7F6C6A1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHFDelegateChain;
+			productName = PHFDelegateChain;
+			productReference = D505ED6815736C4000990F20 /* PHFDelegateChain.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D505ED7B15736C4000990F20 /* PHFDelegateChainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D505ED9115736C4000990F20 /* Build configuration list for PBXNativeTarget "PHFDelegateChainTests" */;
+			buildPhases = (
+				D505ED7715736C4000990F20 /* Sources */,
+				D505ED7815736C4000990F20 /* Frameworks */,
+				D505ED7915736C4000990F20 /* Resources */,
+				D505ED7A15736C4000990F20 /* ShellScript */,
+				F7F476D228024803A7F6C6A1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D505ED8115736C4000990F20 /* PBXTargetDependency */,
+			);
+			name = PHFDelegateChainTests;
+			productName = PHFDelegateChainTests;
+			productReference = D505ED7C15736C4000990F20 /* PHFDelegateChainTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D505ED5F15736C4000990F20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = loqize.me;
+			};
+			buildConfigurationList = D505ED6215736C4000990F20 /* Build configuration list for PBXProject "PHFDelegateChain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D505ED5D15736C4000990F20;
+			productRefGroup = D505ED6915736C4000990F20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D505ED6715736C4000990F20 /* PHFDelegateChain */,
+				D505ED7B15736C4000990F20 /* PHFDelegateChainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D505ED7915736C4000990F20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D505ED7A15736C4000990F20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		F7F476D228024803A7F6C6A1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D505ED6415736C4000990F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D505EDB31574267100990F20 /* PHFDelegateChain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D505ED7715736C4000990F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D505ED8B15736C4000990F20 /* PHFDelegateChainTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D505ED8115736C4000990F20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D505ED6715736C4000990F20 /* PHFDelegateChain */;
+			targetProxy = D505ED8015736C4000990F20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D505ED8C15736C4000990F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D505ED8D15736C4000990F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D505ED8F15736C4000990F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650FCAA05961476781B5F5CD /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D505ED9015736C4000990F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650FCAA05961476781B5F5CD /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D505ED9215736C4000990F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650FCAA05961476781B5F5CD /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D505ED9315736C4000990F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650FCAA05961476781B5F5CD /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D505ED6215736C4000990F20 /* Build configuration list for PBXProject "PHFDelegateChain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D505ED8C15736C4000990F20 /* Debug */,
+				D505ED8D15736C4000990F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D505ED8E15736C4000990F20 /* Build configuration list for PBXNativeTarget "PHFDelegateChain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D505ED8F15736C4000990F20 /* Debug */,
+				D505ED9015736C4000990F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D505ED9115736C4000990F20 /* Build configuration list for PBXNativeTarget "PHFDelegateChainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D505ED9215736C4000990F20 /* Debug */,
+				D505ED9315736C4000990F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D505ED5F15736C4000990F20 /* Project object */;
+}
