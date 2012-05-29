@@ -15,6 +15,8 @@ To be as transparent as possible, `PHFDelegateChain` has the following introspec
 
 Further, only `void` methods are passed to multiple objects along the chain. Non-`void` methods return a value and therefore only the first object in the chain that responds to the selector will receive it, thus breaking the chain at the first object able to handle the invocation. This chain breaking behavior can also be applied to `void` methods by setting the `__breaking` property to `YES`.
 
+The `NSMutableArray` that holds the chain objects only references them weakly in order to avoid circular references.
+
 ## Usage
 
 Usually a class that implements delegates defines an accompanying protocol and enforces it on the delegate object. In these cases it is necessary to type cast the `PHFDelegateChain` instance. Note that it is your responsibility to implement the required protocol methods inside the chain objects. Otherwise the application will crash when the chain receives a method invocation it can't forward.
