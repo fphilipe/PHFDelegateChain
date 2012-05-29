@@ -12,9 +12,9 @@
 		D505ED7E15736C4000990F20 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D505ED7D15736C4000990F20 /* SenTestingKit.framework */; };
 		D505ED7F15736C4000990F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D505ED6B15736C4000990F20 /* Cocoa.framework */; };
 		D505ED8215736C4000990F20 /* PHFDelegateChain.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D505ED6815736C4000990F20 /* PHFDelegateChain.dylib */; };
-		D505ED8B15736C4000990F20 /* PHFDelegateChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D505ED8A15736C4000990F20 /* PHFDelegateChainTests.m */; };
 		D505EDB21574267100990F20 /* PHFDelegateChain.h in Headers */ = {isa = PBXBuildFile; fileRef = D505EDB01574267100990F20 /* PHFDelegateChain.h */; };
 		D505EDB31574267100990F20 /* PHFDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D505EDB11574267100990F20 /* PHFDelegateChain.m */; };
+		D505EDE11574B93700990F20 /* PHFDelegateChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D505EDDF1574B93300990F20 /* PHFDelegateChainTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,9 @@
 		D505ED7015736C4000990F20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D505ED7C15736C4000990F20 /* PHFDelegateChainTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHFDelegateChainTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D505ED7D15736C4000990F20 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D505ED8A15736C4000990F20 /* PHFDelegateChainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHFDelegateChainTests.m; sourceTree = "<group>"; };
 		D505EDB01574267100990F20 /* PHFDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHFDelegateChain.h; sourceTree = "<group>"; };
 		D505EDB11574267100990F20 /* PHFDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHFDelegateChain.m; sourceTree = "<group>"; };
+		D505EDDF1574B93300990F20 /* PHFDelegateChainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHFDelegateChainTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			children = (
 				D505EDB01574267100990F20 /* PHFDelegateChain.h */,
 				D505EDB11574267100990F20 /* PHFDelegateChain.m */,
-				D505ED8315736C4000990F20 /* Tests */,
+				D505EDDF1574B93300990F20 /* PHFDelegateChainTests.m */,
 				D505ED6A15736C4000990F20 /* Frameworks */,
 				D505ED6915736C4000990F20 /* Products */,
 				650FCAA05961476781B5F5CD /* Pods.xcconfig */,
@@ -105,15 +105,6 @@
 				D505ED7015736C4000990F20 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		D505ED8315736C4000990F20 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				D505ED8A15736C4000990F20 /* PHFDelegateChainTests.m */,
-			);
-			name = Tests;
-			path = PHFDelegateChainTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D505ED8B15736C4000990F20 /* PHFDelegateChainTests.m in Sources */,
+				D505EDE11574B93700990F20 /* PHFDelegateChainTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
