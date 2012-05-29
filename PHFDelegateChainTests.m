@@ -89,22 +89,27 @@
 }
 
 - (void)testShouldConformToProtocolIfAnyObjectDoes {
-    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:[TestReceiverOnlyRequired new], nil];
+    id object = [TestReceiverOnlyRequired new];
+    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:object, nil];
     STAssertTrue([chain conformsToProtocol:@protocol(Receiver)], nil);
 }
 
 - (void)testShouldNotConformToProtocolIfNoObjectDoes {
-    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:[NSObject new], nil];
+    id object = [NSObject new];
+    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:object, nil];
     STAssertFalse([chain conformsToProtocol:@protocol(Receiver)], nil);
 }
 
 - (void)testShouldRespondToMethodIfAnyObjectDoes {
-    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:[TestReceiverOnlyRequired new], [TestReceiverRequiredAndOptional new], nil];
+    id firstObject  = [TestReceiverOnlyRequired new];
+    id secondObject = [TestReceiverRequiredAndOptional new];
+    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:firstObject, secondObject, nil];
     STAssertTrue([chain respondsToSelector:@selector(optionalMethod)], nil);
 }
 
 - (void)testShouldNotRespondToMethodIfNoObjectDoes {
-    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:[TestReceiverOnlyRequired new], nil];
+    id object = [TestReceiverOnlyRequired new];
+    PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:object, nil];
     STAssertFalse([chain respondsToSelector:@selector(optionalMethod)], nil);
 }
 
@@ -126,7 +131,8 @@
 }
 
 - (void)testShouldRaiseWhenPerformingMethodThatNoObjectRespondsTo {
-    PHFDelegateChain<Receiver> *chain = [PHFDelegateChain delegateChainWithObjects:[TestReceiverOnlyRequired new], nil];
+    id object = [TestReceiverOnlyRequired new];
+    PHFDelegateChain<Receiver> *chain = [PHFDelegateChain delegateChainWithObjects:object, nil];
     STAssertThrowsSpecificNamed([chain performSelector:@selector(optionalMethod)], NSException, NSInvalidArgumentException, nil);
 }
 

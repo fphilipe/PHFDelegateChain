@@ -8,6 +8,8 @@
 
 #import "PHFDelegateChain.h"
 
+const CFArrayCallBacks kPHFWeakArrayCallBacks = {0, NULL, NULL, CFCopyDescription, CFEqual};
+
 @interface PHFDelegateChain (Helpers)
 
 - (NSArray *)__objectsRespondingToSelector:(SEL)selector;
@@ -31,11 +33,11 @@
     }
     va_end(args);
     
-    return [(PHFDelegateChain *)[self alloc] __initWithObjectsInArray:objects];
+    return [[self alloc] __initWithObjectsInArray:objects];
 }
 
 - (id)__initWithObjectsInArray:(NSArray *)objects {
-    _objects = [objects mutableCopy];
+    [self __setObjects:objects];
     return self;
 }
 
@@ -44,7 +46,8 @@
 }
 
 - (void)__setObjects:(NSMutableArray *)objects {
-    _objects = [objects mutableCopy];
+    _objects = (__bridge_transfer id)CFArrayCreateMutable(0, [objects count], &kPHFWeakArrayCallBacks);
+    [_objects addObjectsFromArray:objects];
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
