@@ -33,15 +33,15 @@ PHFDelegateChain *chain = [PHFDelegateChain delegateChainWithObjects:[EditingDel
 
 Delegation chaining can be useful in a number of circumstances, e.g.
 
-- Splitting up the delegation responsibility, such as having one class that handles the editing methods of a table view and another class that handles the selection methods.
-- When developing a library that needs to handle certain delegate methods of an object while other delegate methods should be forwarded to a custom delegate. Ever seen code that forwards almost all delegate methods just to be able to hook into one?
+-   Splitting up the delegation responsibility, such as having one class that handles the editing methods of a table view and another class that handles the selection methods.
+-   When developing a library that needs to handle certain delegate methods of an object while other delegate methods should be forwarded to a custom delegate. Ever seen code that forwards almost all delegate methods just to be able to hook into one?
 
-```objectivec
-- (void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([_delegate respondsToSelector:@selector(tableView:willBeginEditingRowAtIndexPath:)])
-        [_delegate tableView:tableView willBeginEditingRowAtIndexPath:indexPath];
-}
-```
+    ```objectivec
+    - (void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+        if ([_delegate respondsToSelector:@selector(tableView:willBeginEditingRowAtIndexPath:)])
+            [_delegate tableView:tableView willBeginEditingRowAtIndexPath:indexPath];
+    }
+    ```
 
 ## Installation
 
