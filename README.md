@@ -48,7 +48,7 @@ Delegation chaining can be useful in a number of circumstances, e.g.
 The preferred method is to use [CocoaPods](https://github.com/CocoaPods/CocoaPods). Simply list `PHFDelegateChain` as a dependency:
 
 ```ruby
-dependency 'PHFDelegateChain', '~> 1.0'
+pod 'PHFDelegateChain', '~> 1.0.1'
 ```
 
 If you can't or don't want to use CocoaPods (you really should, it's great!), simply grab the `PHFDelegateChain.{h,m}` files and put it in your project.
