@@ -72,3 +72,7 @@ Make sure to add tests for new features and changes.
 ## License
 
 `PHFDelegateChain` is released under the MIT license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fphilipe/phfdelegatechain/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
