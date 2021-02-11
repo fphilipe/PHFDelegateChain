@@ -21,7 +21,8 @@ let package = Package(
         .target(
             name: "PHFDelegateChain",
             dependencies: [
-            ]
+            ],
+            publicHeadersPath: "."
         ),
     ]
 )

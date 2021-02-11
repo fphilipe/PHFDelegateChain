@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 loqize.me. All rights reserved.
 //
 
-#import "PHFDelegateChain.h"
+#import "include/PHFDelegateChain.h"
 
 const CFArrayCallBacks kPHFWeakArrayCallBacks = {0, NULL, NULL, CFCopyDescription, CFEqual};
 
