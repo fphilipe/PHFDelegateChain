@@ -21,10 +21,7 @@ let package = Package(
         .target(
             name: "PHFDelegateChain",
             dependencies: [
-            ],
-            path: ".",
-            exclude: ["PHFDelegateChainTests.m"],
-            publicHeadersPath: "."
-        )
+            ]
+        ),
     ]
 )
