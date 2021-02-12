@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 loqize.me. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
 #import "PHFDelegateChain.h"
 
